@@ -7,3 +7,9 @@ def index(request):
 
     }
     return render(request, "index.html", context=context)
+
+def single(request):
+    context = {
+
+    }
+    return render(request, "single.html", context=context)
