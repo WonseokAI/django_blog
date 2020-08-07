@@ -1,7 +1,7 @@
 <!DOCTYPE HTML>
 <html lang="en-US">
     <head>
-        <title>Suppablog - Minimal Blog Html Template</title>
+        <title>Wonseok's blog</title>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
         <meta name="description" content="Template by Colorlib" />
         <meta name="keywords" content="HTML, CSS, JavaScript, PHP" />
@@ -54,7 +54,7 @@
                 </div>
                 <nav id="header-main-menu">
                     <ul class="main-menu sm sm-clean">
-                        <li><a href="index.html" class="current">Home</a></li>
+                        <li><a href="{% url 'index' %}" class="current">Home</a></li>
                         <li><a href="about.html">About</a></li>
                         <li><a href="scroll.html">Scroll</a></li>
                         <li><a href="contact.html">Contact</a></li>
@@ -68,7 +68,7 @@
             </div>
             <div class="menu-right-part">
                 <div class="logo-holder">
-                    <a href="index.html">
+                    <a href="{% url 'index' %}">
                         <img src="{% static 'images/logo.png' %}" alt="Suppablog WP">
                     </a>
                 </div>
@@ -117,7 +117,7 @@
                                     </div>
                                     <div class="entry-date published">{{ post.createDate }}</div>
                                     <h2 class="entry-title">
-                                        <a href="{% url 'single' %}">{{ post.title }}</a>
+                                        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
                                     </h2>
                                     <div class="excerpt">
                                         {% if post.is_content_more %}
@@ -125,7 +125,7 @@
                                         {% else %}
                                             {{ post.content }}
                                         {% endif %}
-                                        <a class="read-more" href="{% url 'single' %}"></a>
+                                        <a class="read-more" href="{{ post.get_absolute_url }}"></a>
                                     </div>
                                     <div class="clear"></div>
                                 </div>
@@ -136,7 +136,7 @@
                             <div class="entry-content relative">
                                 <div class="content-1170 center-relative">
                                     <h2 class="entry-title">
-                                        <a href="{% url 'single' %}">{{ post.title }}</a>
+                                        <a href="{{ post.get_absolute_url }}">{{ post.title }}</a>
                                     </h2>
                                     <div class="cat-links">
                                         <ul>

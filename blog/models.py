@@ -19,8 +19,9 @@ class Post(models.Model):
     def __str__(self):
         return self.title
 
+    # post numbering : first post -> post/1
     def get_absolute_url(self):
-        return reverse("single", args=[str(self.id)])
+        return reverse("post", args=[str(self.id)])
 
     def is_content_more(self):
         post_length = 300
