@@ -42,15 +42,10 @@
         <!-- Left Sidebar -->
         <div id="sidebar" class="sidebar">
             <div class="menu-left-part">
-                <div class="search-holder">
-                    <label>
-                        <input type="search" class="search-field" placeholder="Type here to search..." value="" name="s" title="Search for:">
-                    </label>
-                </div>
                 <div class="site-info-holder">
-                    <h1 class="site-title">Suppablog</h1>
+                    <h1 class="site-title">Welcome to Wonseok's blog</h1>
                     <p class="site-description">
-                        Suppablog is simple and yet cool wordpress theme to lorem ipsum dolor sit.
+                        <!-- Introduce your self -->
                     </p>
                 </div>
                 <nav id="header-main-menu">
@@ -58,6 +53,7 @@
                         <li><a href="{% url 'index' %}" class="current">Home</a></li>
                         {% if user.is_authenticated %}
                             <li><a href="{% url 'post_create' %}">Writing a Post</a></li>
+                            <li><a href="/admin/logout/">Log out</a></li>
                         {% else %}
                             <li><a href="/admin">Login</a></li>
                         {% endif %}
