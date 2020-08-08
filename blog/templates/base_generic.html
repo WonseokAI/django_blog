@@ -10,7 +10,7 @@
 
         {% load static %}
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
-        <link rel="shortcut icon" href="{% static 'images/favicon.png' %}" />
+        <link rel="shortcut icon" href="{% static 'demo-images/wonseok_main.jpg' %}" />
         <link href='http://fonts.googleapis.com/css?family=Montserrat:400,700%7CLibre+Baskerville:400,400italic,700' rel='stylesheet' type='text/css'>
         <link rel="stylesheet" type="text/css"  href='{% static "css/clear.css" %}' />
         <link rel="stylesheet" type="text/css"  href='{% static "css/common.css" %}' />
@@ -33,7 +33,7 @@
             <tbody>
                 <tr>
                     <td>
-                        <img src="{% static 'images/ajax-document-loader.gif' %}" alt="Loading...">
+                        <img src="{% static 'demo-images/loading.png' %}" alt="Loading...">
                     </td>
                 </tr>
             </tbody>
@@ -68,22 +68,24 @@
             <div class="menu-right-part">
                 <div class="logo-holder">
                     <a href="{% url 'index' %}">
-                        <img src="{% static 'images/logo.png' %}" alt="Suppablog WP">
+                        <img src="{% static 'demo-images/wonseok1.jpg' %}" alt="HOME">
                     </a>
                 </div>
+
+
                 <div class="toggle-holder">
                     <div id="toggle">
                         <div class="menu-line"></div>
                     </div>
                 </div>
+
+
                 <div class="social-holder">
                     <div class="social-list">
-                        <a href="#"><i class="fa fa-twitter"></i></a>
-                        <a href="#"><i class="fa fa-youtube-play"></i></a>
-                        <a href="#"><i class="fa fa-facebook"></i></a>
-                        <a href="#"><i class="fa fa-vimeo"></i></a>
-                        <a href="#"><i class="fa fa-behance"></i></a>
-                        <a href="#"><i class="fa fa-rss"></i></a>
+                        <a href="https://www.facebook.com/profile.php?id=100014244785289" target="_blank"><i class="fa fa-facebook"></i></a>
+                        <a href="https://www.instagram.com/wons20k/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+                        <a href="https://github.com/WonseokAI" target="_blank"><i class="fa fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/wonseok-choi-4660aa199/"><i class="fa fa-linkedin" target="_blank"></i></a>
                     </div>
                 </div>
                 <div class="fixed scroll-top"><i class="fa fa-caret-square-o-up" aria-hidden="true"></i></div>
